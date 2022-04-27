@@ -79,14 +79,14 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outstate) {
-        Log.i("*** onSaveInstanceState ***","*** onSaveInstanceState ***");
+
         outstate.putString("result",tv1.getText().toString());
         super.onSaveInstanceState(outstate);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState){
-        Log.i("*** onRestoreInstanceState ***","*** onRestoreInstanceState ***");
+
         super.onRestoreInstanceState(savedInstanceState);
         tv1.setText(savedInstanceState.getString(("result")));
     }
