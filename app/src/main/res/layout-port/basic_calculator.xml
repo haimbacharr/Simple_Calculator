@@ -181,10 +181,11 @@
         <LinearLayout
             android:id="@+id/dynamic_content"
             android:layout_width="match_parent"
-            android:layout_height="111dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="vertical" />
 
-        <!-- <include layout="@layout/slide_bar_layout"/> -->
+      <include layout="@layout/slide_bar_layout" />
     </LinearLayout>
 
     <TextView
